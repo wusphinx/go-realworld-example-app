@@ -1,0 +1,32 @@
+name: lint
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  lint:
+    name: lint
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        go-version: [1.16.x]
+
+    steps:
+      - name: Set up Go ${{ matrix.go-version }}
+        uses: actions/setup-go@v2
+        with:
+          go-version: ${{ matrix.go-version }}
+
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: install golangci-lint
+        run:
+          wget -O- -nv https://raw.githubusercontent.com/golangci/golangci-lint/master/install.sh |
+          sh -s -- -b $(go env GOPATH)/bin v1.45.2
+      - name: Lint
+        run: ./scripts/lint.sh

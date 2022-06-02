@@ -1,0 +1,10 @@
+linters:
+  enable:
+    - misspell
+    - goimports
+    - revive
+    - gofmt
+
+linters-settings:
+  goimports:
+    local-prefixes: github.com/wusphinx/go-realworld-example-app
