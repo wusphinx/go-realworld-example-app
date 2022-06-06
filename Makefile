@@ -1,2 +1,2 @@
 lint:
-	sh scripts/lint.sh
+	sh scripts/ci.sh
