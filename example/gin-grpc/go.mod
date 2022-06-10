@@ -3,7 +3,7 @@ module github.com/wusphinx/go-realworld-example-app/example/gin-grpc
 go 1.16
 
 require (
-	github.com/gin-gonic/gin v1.8.0
+	github.com/gin-gonic/gin v1.8.1
 	github.com/golang/protobuf v1.5.2 // indirect
 	github.com/google/go-cmp v0.5.7 // indirect
 	github.com/soheilhy/cmux v0.1.5

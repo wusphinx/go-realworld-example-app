@@ -7,3 +7,4 @@
 | [gin-grpc](/example/gin-grpc)         | 
 | [gin-jaeger](/example/gin-jaeger)     | 
 | [gin-wrapper](/example/gin-wrapper)   | 
+| [gin-logrus](/example/gin-logrus)   | 
