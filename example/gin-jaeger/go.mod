@@ -5,5 +5,6 @@ go 1.16
 require (
 	github.com/gin-gonic/gin v1.8.1
 	github.com/openzipkin/zipkin-go v0.4.0
+	github.com/sirupsen/logrus v1.8.1
 	go.opentelemetry.io/otel/trace v1.7.0
 )
