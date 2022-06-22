@@ -1,4 +1,4 @@
-module github.com/wusphinx/go-realworld-example-app/example/gin-logrus
+module github.com/wusphinx/go-realworld-example-app/example/gin-logrus/go.mod
 
 go 1.16
 

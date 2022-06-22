@@ -1,4 +1,4 @@
-module github.com/wusphinx/go-realworld-example-app/example/gin-wrapper
+module github.com/wusphinx/go-realworld-example-app/example/gin-wrapper/go.mod
 
 go 1.16
 

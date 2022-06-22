@@ -1,4 +1,4 @@
-module github.com/wusphinx/go-realworld-example-app/example/gin-jaeger
+module github.com/wusphinx/go-realworld-example-app/example/gin-jaeger/go.mod
 
 go 1.16
 
