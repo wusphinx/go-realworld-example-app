@@ -1,10 +1,10 @@
-module github.com/wusphinx/go-realworld-example-app/example/gin-jaeger/go.mod
+module github.com/wusphinx/go-realworld-example-app/example/gin-jaeger
 
 go 1.16
 
 require (
 	github.com/gin-gonic/gin v1.8.1
-	github.com/openzipkin/zipkin-go v0.4.0
-	github.com/sirupsen/logrus v1.8.1
-	go.opentelemetry.io/otel/trace v1.7.0
+	github.com/wusphinx/go-realworld-example-app/example/libs/otel v0.0.0-00010101000000-000000000000
 )
+
+replace github.com/wusphinx/go-realworld-example-app/example/libs/otel => ../libs/otel
