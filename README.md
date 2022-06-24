@@ -1,6 +1,6 @@
 # go-realworld-example-app
 
-[![lint workflow](https://github.com/wusphinx/go-realworld-example-app/actions/workflows/lint.yml/badge.svg)](https://github.com/wusphinx/go-realworld-example-app/actions/workflows/lint.yml)
+[![ci workflow](https://github.com/wusphinx/go-realworld-example-app/actions/workflows/ci.yml/badge.svg)](https://github.com/wusphinx/go-realworld-example-app/actions/workflows/ci.yml)
 
 | Example Package               | 
 | -------------------------------       | 
