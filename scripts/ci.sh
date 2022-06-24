@@ -13,5 +13,6 @@ do
         echo "lint ${dir}..."
         cd $dir
         golangci-lint run -v 
+        go test -v 
     )
 done
