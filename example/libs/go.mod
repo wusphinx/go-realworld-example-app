@@ -1,4 +1,4 @@
-module github.com/wusphinx/go-realworld-example-app/example/libs/otel
+module github.com/wusphinx/go-realworld-example-app/example/libs
 
 go 1.16
 

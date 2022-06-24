@@ -1,5 +1,6 @@
 {
   "gopls": {
       "experimentalWorkspaceModule": true
-  }
+  },
+  "go.inferGopath": false
 }
