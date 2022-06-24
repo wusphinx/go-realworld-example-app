@@ -8,3 +8,4 @@
 | [gin-jaeger](/example/gin-jaeger)     | 
 | [gin-wrapper](/example/gin-wrapper)   | 
 | [gin-logrus](/example/gin-logrus)   | 
+| [gin-test](/example/gin-test)   | 
