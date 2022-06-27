@@ -15,7 +15,7 @@ func Test_startPage400(t *testing.T) {
 	Register(r)
 	raw := `{"address":"test"}`
 	w := itest.PerformRequest(r, "POST", "/testing", bytes.NewBufferString(raw), nil)
-	assert.NotEqual(t, w.Code, 200)
+	assert.Equal(t, w.Code, 400)
 	t.Logf("resp: %s", w.Body.String())
 }
 

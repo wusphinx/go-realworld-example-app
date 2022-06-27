@@ -9,5 +9,5 @@ require (
 	golang.org/x/crypto v0.0.0-20210920023735-84f357641f63 // indirect
 	golang.org/x/net v0.0.0-20210917221730-978cfadd31cf // indirect
 	golang.org/x/text v0.3.7 // indirect
-	google.golang.org/grpc v1.42.0
+	google.golang.org/grpc v1.47.0
 )
