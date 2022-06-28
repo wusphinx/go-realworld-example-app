@@ -9,3 +9,4 @@
 | [gin-wrapper](/example/gin-wrapper)   | 
 | [gin-logrus](/example/gin-logrus)   | 
 | [gin-test](/example/gin-test)   | 
+| [db-test](/example/db-test)   | 
