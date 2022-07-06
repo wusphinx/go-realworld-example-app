@@ -1,7 +1,9 @@
 package main
 
 import (
-	_ "embed"
+	_ "embed" //nolint
+	"log"
+
 	"github.com/gin-gonic/gin"
 	"gopkg.in/yaml.v3"
 )
@@ -17,7 +19,10 @@ func main() {
 	r := gin.New()
 
 	var conf Config
-	yaml.Unmarshal([]byte(rawFile), &conf)
+
+	if err := yaml.Unmarshal([]byte(rawFile), &conf); err != nil {
+		log.Fatalf("unmarshal failed err: %v", err)
+	}
 
 	r.GET("/", func(c *gin.Context) {
 		//output: {"app":"example"}
