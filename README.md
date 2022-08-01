@@ -11,3 +11,4 @@
 | [gin-test](/example/gin-test)   | 
 | [db-test](/example/db-test)   | 
 | [body-rewrite](/example/body-rewrite)   | 
+| [testcase](/example/testcase)   | 
