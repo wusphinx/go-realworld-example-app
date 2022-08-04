@@ -1,6 +1,7 @@
 # go-realworld-example-app
 
 [![ci workflow](https://github.com/wusphinx/go-realworld-example-app/actions/workflows/ci.yml/badge.svg)](https://github.com/wusphinx/go-realworld-example-app/actions/workflows/ci.yml)
+<a title="Require Go Version" target="_blank" href="https://github.com/wusphinx/go-realworld-example-app"><img src="https://img.shields.io/badge/go-%3E%3D1.16-30dff3?style=flat-square&logo=go" /></a>
 
 | Example Package               | 
 | -------------------------------       | 
