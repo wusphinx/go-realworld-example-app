@@ -13,3 +13,4 @@
 | [db-test](/example/db-test)   | 
 | [body-rewrite](/example/body-rewrite)   | 
 | [testcase](/example/testcase)   | 
+| [cgo-demo](/example/cgo-demo)   | 
