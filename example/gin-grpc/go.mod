@@ -10,4 +10,5 @@ require (
 	golang.org/x/net v0.0.0-20210917221730-978cfadd31cf // indirect
 	golang.org/x/text v0.3.7 // indirect
 	google.golang.org/grpc v1.47.0
+	google.golang.org/grpc/examples v0.0.0-20221006202345-c03925db8d3c
 )

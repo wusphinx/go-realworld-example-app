@@ -1,6 +1,7 @@
 package main
 
 import (
+	"context"
 	"fmt"
 	"log"
 	"net"
@@ -8,7 +9,20 @@ import (
 	"github.com/gin-gonic/gin"
 	"github.com/soheilhy/cmux"
 	"google.golang.org/grpc"
+	pb "google.golang.org/grpc/examples/helloworld/helloworld"
 )
+
+// copy from https://github.com/grpc/grpc-go/blob/master/examples/helloworld/greeter_server/main.go
+// server is used to implement helloworld.GreeterServer.
+type server struct {
+	pb.UnimplementedGreeterServer
+}
+
+// SayHello implements helloworld.GreeterServer
+func (s *server) SayHello(ctx context.Context, in *pb.HelloRequest) (*pb.HelloReply, error) {
+	log.Printf("Received: %v", in.GetName())
+	return &pb.HelloReply{Message: "Hello " + in.GetName()}, nil
+}
 
 type Engine struct {
 	port       int
@@ -55,9 +69,12 @@ func (e *Engine) Serve() {
 }
 
 func main() {
+	grpcS := grpc.NewServer()
+	pb.RegisterGreeterServer(grpcS, &server{})
+
 	e := &Engine{
 		port:       8080,
-		grpcServer: grpc.NewServer(),
+		grpcServer: grpcS,
 		ginServer:  gin.New(),
 	}
 
