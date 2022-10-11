@@ -19,6 +19,5 @@ func GetInstance() *singleton {
 		instance = &singleton{}
 		count++
 	})
-
 	return instance
 }
