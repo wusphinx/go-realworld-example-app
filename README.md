@@ -14,3 +14,4 @@
 | [body-rewrite](/example/body-rewrite)   | 
 | [testcase](/example/testcase)   | 
 | [cgo-demo](/example/cgo-demo)   | 
+| [cas](/example/cas)   | 
