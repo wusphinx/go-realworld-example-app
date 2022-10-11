@@ -15,3 +15,4 @@
 | [testcase](/example/testcase)   | 
 | [cgo-demo](/example/cgo-demo)   | 
 | [cas](/example/cas)   | 
+| [设计模式](/example/pattern)   | 
