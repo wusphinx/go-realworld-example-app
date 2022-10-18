@@ -16,3 +16,4 @@
 | [cgo-demo](/example/cgo-demo)   | 
 | [cas](/example/cas)   | 
 | [设计模式](/example/pattern)   | 
+| [限流](/example/rate-limiting)   | 
