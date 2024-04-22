@@ -12,7 +12,7 @@ import (
 func OverWriteBody(newBody []byte) gin.HandlerFunc {
 	return func(c *gin.Context) {
 		var buf bytes.Buffer
-		body, err := ioutil.ReadAll(io.TeeReader(c.Request.Body, &buf))
+		body, err := io.ReadAll(io.TeeReader(c.Request.Body, &buf))
 		if err != nil {
 			c.AbortWithStatusJSON(500, err)
 			return
@@ -27,7 +27,7 @@ func main() {
 	r := gin.New()
 
 	r.POST("/overwrite", OverWriteBody([]byte(`go`)), func(c *gin.Context) {
-		body, err := ioutil.ReadAll(c.Request.Body)
+		body, err := io.ReadAll(c.Request.Body)
 		if err != nil {
 			c.AbortWithStatusJSON(500, err)
 			return
